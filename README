@@ -1,0 +1,15 @@
+udev rule for slcan based CAN adapters (serial devices), for now supports only:
+- CANUSB adapter by Lawicel http://www.canusb.com/ http://www.can232.com/?page_id=16
+
+Defaults to 125Kbit (-s4), if you need to change is adjust the -s parameter according to the table below:
+
+0 Setup 10Kbit
+1 Setup 20Kbit
+2 Setup 50Kbit
+3 Setup 100Kbit
+4 Setup 125Kbit
+5 Setup 250Kbit
+6 Setup 500Kbit
+7 Setup 800Kbit
+8 Setup 1Mbit
+

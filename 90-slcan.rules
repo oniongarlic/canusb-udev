@@ -1,0 +1,8 @@
+ACTION!="add", GOTO="slcan_rules_end"
+SUBSYSTEM!="tty", GOTO="slcan_rules_end"
+
+ENV{ID_MODEL}=="CANUSB" , RUN+="/usr/local/bin/slcand -o -c -s4 -S 1152000 $env{DEVNAME} can%n"
+
+# ENV{ID_MODEL}=="CANUSB" , RUN+="/usr/local/bin/slcand -o -c -s4 -S 1152000 $env{DEVNAME} can0"
+
+LABEL="slcan_rules_end"
