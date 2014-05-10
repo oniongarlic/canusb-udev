@@ -13,3 +13,4 @@ Defaults to 125Kbit (-s4), if you need to change is adjust the -s parameter acco
 7 Setup 800Kbit
 8 Setup 1Mbit
 
+can-utils is required, https://gitorious.org/linux-can/can-utils
